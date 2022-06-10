@@ -1,0 +1,624 @@
+/*  Nesse arquivo temos Regras css que sao usadas na parte do usuario
+
+*/
+/*  Legendas
+*   MOD_A  = Modificações aplicadas
+*/
+/*  Variaveis css
+*/
+:root {
+    --rosa-03: rgba(255, 38, 38, 0.3);
+    --preto: rgba(0, 0, 0, 1);
+    --rosa-06: rgba(255, 38, 38, 0.6);
+    --cinza-06: rgba(0, 0, 0, 0.6);
+    --rosa-04: rgba(255, 38, 38, 0.4);
+    --cinza-01: rgba(0, 0, 0, 0.1);
+}
+
+
+/*
+*       Modificaçoes relacionadas ao menu
+*/
+
+
+/*Alterando o fundo de um container*/
+.backgroundGrey {
+    background-color: var(--cinza-06);
+    
+}
+
+.backgroundGrey a {
+    text-decoration: none;
+}
+
+/*MOD_A ao menu superior(em modo de tela pequena)*/
+.col-smp-20 {
+    -ms-flex: 0 0 20.0%;
+    flex: 0 0 20.0%;
+    max-width: 20.0%
+}
+
+.col-smp-80 {
+    -ms-flex: 0 0 80.0%;
+    flex: 0 0 80.0%;
+    max-width: 80.0%
+}
+.col-smp-85{
+    -ms-flex: 0 0 85.0%;
+    flex: 0 0 85.0%;
+    max-width: 85.0%
+}
+.col-smp-50{
+    -ms-flex: 0 0 50.0%;
+    flex: 0 0 50.0%;
+    max-width: 50.0% 
+}
+
+
+/*MOD_A que definem a altura do container que armazena o carrosel de imagens*/
+
+.second-menu {
+    width: 86%;
+    margin: 1% 7%;
+
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    .second-menu {
+        width: 100%;
+        margin: 1% 0%;
+
+    }
+
+}
+
+.slider {
+    display: block;
+
+}
+
+.slider .slider-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.slider-item {
+    display: none;
+    height: 380px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    display: block;
+}
+
+
+.slider-next,
+.slider-prev {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    line-height: 40px;
+    font-weight: lighter;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 20px;
+    z-index: 99;
+    top: 40%;
+    margin: 0 8%;
+}
+
+.slider-next {
+    right: 20px;
+    left: auto;
+    z-index: 100;
+    float: right;
+}
+
+/*MOD_A a terceira parte do menu*/
+
+.third-menu ul li{
+    border-radius: 10px;
+}
+
+.third-menu ul li:hover{
+    background-color: var(--rosa-03);
+}
+.third-menu input {
+    width: 200px;
+}
+
+/*
+*       MOD_A as barras laterais(Tela grande/Tela pequenas) 
+*/
+.sideBar_DPequeno {
+    display: none;
+}
+
+.sideBar_DPequeno {
+    width: 125px;
+}
+
+.main-session-item {
+    width: 140%;
+    margin: 5% 20%;
+    clear: both;
+    background-color: var(--rosa-03);
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 30px;
+    color: var(--preto);
+}
+
+.sideBar_Dgrande a:hover .main-session-item {
+    background-color: rgba(200, 200, 200, 1);
+}
+
+
+
+/*
+*       MOD_A ao container que armazena o conteudo das paginas
+*/
+.page_contente {
+    margin: 3% 6%;
+}
+
+.page_contente h4 {
+    border-bottom: 1px solid var(--rosa-06);
+    width: 260px;
+    text-align: center;
+    color: var(--preto);
+    line-height: 50px;
+    margin-bottom: 3%;
+}
+
+/*MOD_A a um item da lista de exibição*/
+.content-usu-unit {
+    height: 320px;
+    margin: 1% 0%;
+}
+
+.content-usu-unit a {
+    text-decoration: none;
+    color: var(--preto);
+
+
+}
+
+.content-usu-unit-img {
+    height: 82%;
+    width: 100%;
+
+}
+
+.content-usu-unit-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.content-usu-unit-name {
+    height: 18%;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 2px solid var(--rosa-06);
+    margin-top: 2%
+}
+
+/*modificaçoes aplicadas ao botao"Lista completa"*/
+.content-usu-btn-vermais {
+    float: right;
+    margin: 5% 3% 0% 0%;
+    clear: left;
+}
+
+.content-usu-btn-vermais a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 38, 38, 0.15);
+    padding: 8px 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content-usu-btn-vermais a:hover {
+    background-color: rgba(255, 38, 38, 0.25);
+}
+
+/*Formataçoes aplicadas a barra de listagem, que fica logo abaixo da pagina*/
+
+.content-usu-pag {
+    overflow: hidden;
+
+    margin: 5% 20% 2% 0%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+
+}
+
+.content-usu-pag p {
+    float: left;
+    margin: 0% 2%;
+}
+
+.content-usu-pag a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    padding: 5px 7px;
+    background-color: var(--rosa-03);
+    border-radius: 5px;
+}
+
+.content-usu-pag-item {
+    float: left;
+    margin: 0% 1%;
+}
+
+.pag-item-active a {
+    background-color: var(--rosa-06);
+}
+
+.list-content p {
+    font-size: 20px;
+}
+
+.list-content span {
+    color: var(--rosa-06);
+    font-size: 22px;
+}
+
+/*
+    * MOD_A aplicadas a mensagens de alerta do site
+*/
+.msg {
+    margin: 5%;
+    border-radius: 50px;
+
+
+}
+
+.msg-fall h3 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--preto);
+    line-height: 35px;
+}
+
+
+/*
+* MOD_A a pagina de contato do site 
+*/
+
+.contat {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+
+.contat h1 {
+    text-align: center;
+    color: var(--rosa-06);
+    font-size: 30px;
+    margin: 4% 2%;
+}
+
+.contat span {
+    color: var(--rosa-06);
+}
+
+.contat p {
+    font-size: 17px;
+    margin: 4% 6%;
+}
+
+.contat form {
+    margin: 5%;
+}
+
+.contat button {
+    background-color: var(--rosa-03);
+    border: var(--rosa-06);
+
+}
+
+.contat button:hover {
+    background-color: var(--rosa-06);
+}
+
+.content-form-camp-error {
+    color: var(--rosa-04);
+    margin: 2%;
+
+}
+
+.contat h6 {
+    text-align: center;
+}
+
+.contat a {
+    color: var(--rosa-06);
+}
+
+.contat a:hover {
+    color: var(--rosa-04);
+}
+
+/*
+    MOD_A ao rodape do site
+*/
+.basebord {
+    height: 80px;
+    margin-top: 2%;
+
+
+}
+
+.basebord-log {
+    line-height: 70px;
+}
+
+.basebord p {
+    margin-top: 30px;
+
+    text-align: right;
+}
+
+/*
+*           MOD_A a pagina do iten
+*/
+.content-item-dager{
+    background-color: var(--rosa-06);
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.content-item {
+    background-color: var(--cinza-01);
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+
+.content-item h1 {
+    text-align: center;
+    color: var(--rosa-06);
+    font-size: 28px;
+}
+
+.content-item p {
+    width: 90%;
+    margin: 2% 5%;
+}
+
+.title-resp {
+    display: none;
+}
+
+.content-item h2 {
+    color: var(--rosa-06);
+    font-size: 24px;
+}
+
+.content-item h3 {
+    margin-left: 4%;
+    color: var(--rosa-06);
+    margin-top: 3%;
+}
+
+.content-item a {
+    color: var(--rosa-06);
+}
+
+.content-img {
+    height: 300px;
+
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.gen-iten {
+    background-color: var(--rosa-04);
+    height: 34px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.content-item video {
+    height: 300px;
+    width: 100%;
+    margin: 3% 0%;
+}
+
+.container-separt {
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.img-modal img {
+    width: 100%;
+    height: 450px;
+}
+
+/*
+*  MOD_A a pagina de perfil do usuario
+*/
+.perfil {
+    background-color: var(--cinza-01);
+    border-radius: 10px;
+
+}
+
+.perfil h4 {
+    width: 260px;
+    text-align: center;
+    color: var(--rosa-06);
+    line-height: 50px;
+    margin-bottom: 1%;
+    font-size: 26px;
+}
+
+.perfil-dados,
+.perfil-ops {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 19px;
+    margin-bottom: 2%;
+}
+
+.perfil-ops {
+    margin-top: 2%;
+}
+
+.perfil-op {
+    background-color: var(--rosa-04);
+    text-align: center;
+    border-radius: 10px;
+    margin: 1% 0%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.perfil-op a {
+    border-radius: 10px;
+    color: var(--rosa-04);
+}
+
+.perfil-op a:hover {
+    background-color: var(--rosa-06);
+}
+
+.perfil-item {
+    margin: 1% 0%;
+}
+
+.space {
+    visibility: collapse;
+}
+
+/*
+*       Alteraçoes aplicadas em telas de menor tamanho
+*/
+@media screen and (max-width: 1200px) {
+    /*MOD_A barra lateral que fica visivel em dispositivos de tela   grandes*/
+
+    .sideBar_Dgrande {
+        display: none;
+
+    }
+
+    .sideBar_DPequeno {
+        display: block;
+
+    }
+    /*Mod_A a terceira parte do menu do site*/
+    .third-menu input {
+        width: 80%;
+        margin-left: 5%;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /*
+    MOD_A aplicada a parte de item do site
+    */
+    .content-one h1 {
+        display: none;
+    }
+
+    .title-resp {
+        display: block;
+    }
+
+    .content-img {
+        height: 400px;
+
+    }
+  
+  
+}
+
+@media screen and (max-width: 850px) {
+
+    /*MOD_A que definem a altura do container que armazena o carrosel de imagens*/
+    .second-menu {
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    /*MOD_A a terceira parte do menu*/
+    .third-menu {
+        margin: 0%;
+    }
+
+    /*MOD_A a um item da lista de exibição*/
+    .content-usu-unit {
+        margin: 3% 0%;
+    }
+ /*
+    MOD_A ao rodape do site
+    */
+    .basebord-log {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    /*MOD_A a um item da lista de exibição*/
+    .content-usu-unit {
+        margin: 5% 0%;
+    }
+
+   
+    /*
+    MOD_A aplicada a pagina de exibição de iten do site 
+    */
+    .content-img img {
+        width: 90%;
+
+    }
+
+    /*
+    MOD_A aplicada a parte de item do site
+    */
+    .content-one {
+        display: none;
+    }
+
+
+
+}
+
+/*
+*MOD_A aplicadas a parte de sessao do site
+*/
+.selectedSession {
+    border-bottom: 2px solid var(--rosa-06);
+}
+
+/*
+$_SESSION['SEGMENT'] = 'ANIMES';
+            $_SESSION['SEGMENT'] = 'FILMESSERIES';*/

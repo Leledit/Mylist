@@ -1,0 +1,18 @@
+/*
+Neste arquivo temos configuraçoes que sao aplicadas em todos os segmentos do projeto
+
+*/
+/*
+Globais
+*/
+.unit-select{
+    color: rgba(255, 38, 38, 0.3);
+ 
+}
+.side_spacing{
+    margin: 0% 6%;    
+}
+.spacing_top10{
+    margin-top: 10%;
+}
+

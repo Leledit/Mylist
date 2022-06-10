@@ -1,0 +1,234 @@
+/*Estilizaçoes realcionadas a parte administrativa do site*/
+:root {
+    --rosa-03: rgba(255, 38, 38, 0.3);
+    --rosa-02: rgba(255, 38, 38, 0.2);
+    --rosa-01: rgba(255, 38, 38, 0.1);
+    --preto: rgba(0, 0, 0, 1);
+    --rosa-06: rgba(255, 38, 38, 0.6);
+    --rosa-07: rgba(255, 38, 38, 0.7);
+    --cinza-06: rgba(0, 0, 0, 0.6);
+    --rosa-04: rgba(255, 38, 38, 0.4);
+    --cinza-01: rgba(0, 0, 0, 0.1);
+    --branco: rgba(255,255,255);
+}
+/*
+* MOD_A aplicadas a parte de listagem de dados administrativa
+*/
+.list-content-adm{
+    margin-top: 4%;
+   }
+
+.list-content-adm h4{
+    margin: 0% 0% 3% 0%;
+    color: var(--rosa-06) ;
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid var(--rosa-06);
+    line-height: 40px;
+    font-size: 24px;
+
+}
+
+.list-content-adm a:hover{
+    color: var(--rosa-04);
+}
+.adm-add-record a{
+    color: var(--rosa-06);
+    font-size: 20px;
+     text-decoration: none;
+     
+}
+
+/*
+* MOD_A aplicadas a barra de açoes do administrador
+*/
+.adm-bar{
+    background-color: var(--cinza-01);
+}
+.adm-bar-msg h1{
+    text-align:left;
+    font-size: 18px;
+    margin-top:5%;
+    margin-left: 5%;
+    line-height: 30px;
+}
+.adm-bar-msg b{
+    color: var(--rosa-06);
+}
+.adm-bar-sessao a ,.adm-bar-acoes a{
+text-decoration: none;
+
+}
+.adm-bar-sessao h1 ,.adm-bar-acoes h1{
+color: var(--rosa-06);
+font-size: 22px;
+margin: 5% 0% 5% 3%;
+}
+.adm-bar-unit{
+    width: 90%;
+    margin: 3% 5% 3% 5%;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    background-color: var(--branco);
+    line-height: 40px;
+    border-radius: 10px;
+    
+}
+.adm-bar-unit:hover{
+    background-color: var(--rosa-01);
+}
+.unit-select {
+    color: var(--rosa-07);
+    border-bottom: 1px solid var(--rosa-07);
+}
+/*
+* Modificaçoes aplicadas a pagina de item da pagina admnistrativa
+*/
+.content-item-adm {
+    background-color: var(--cinza-01);
+    border-radius: 20px;
+    margin-bottom: 2%;
+  
+}
+.content-item-adm h1{
+    font-size: 22px;
+    color: var(--rosa-07);
+    text-align: center;
+}
+.content-item-adm h2,.content-item-adm h3{
+    font-size: 20px;
+    color: var(--rosa-07);
+    margin-top: 2%;
+}
+.adm-item-op {
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2%;
+    line-height: 30px;
+    width: 200px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.adm-item-op:hover {
+    background-color: rgba(255, 38, 38, 0.4);
+}
+
+.adm-espacing{
+    visibility: hidden;
+}
+
+#excluirItem span{
+    color: var(--rosa-07);
+}
+
+.content-video iframe{
+ height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.content-video h1{
+    text-align: center;
+    font-size: 20px;
+    color: var(--rosa-07);
+    margin-bottom: 5%;
+}
+/*
+* MOD_A formularios 
+*/
+.adm-forme{
+    background-color: var(--cinza-01);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+.adm-forme h1{
+    text-align: center;
+
+    color: var(--rosa-07);
+    font-size: 24px;
+}
+.adm-forme h2{
+    color: var(--rosa-06);
+    font-size: 22px;
+    margin-bottom: 3%;
+}
+.adm-forme span{
+    color: var(--rosa-07);
+}
+
+.adm-forme-gen-item{
+    background-color: var(--rosa-02);
+    height: 35px;
+    border-radius: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 2%;
+    width: 80%;
+    
+}
+.adm-forme-gen-item input{
+ display: none; 
+}
+.adm-forme-gen-item input:checked~.adm-forme-gen-item-visible{
+    border-bottom: 2px solid var(--rosa-07);
+}
+
+/*
+*MOD_A pagina de listagem
+*/
+#filter-busc ,#filter-limit{
+    width: 80%;
+    margin-left: 5%;
+}
+.adm-filt ,.adm-usuario{
+    background-color: var(--cinza-01);
+    margin: 2% 5%;
+    border-radius: 20px;
+}
+.adm-filt h1 ,.adm-usuario h1{
+    font-size: 24px;
+    color: var(--rosa-06);
+    width: 250px;
+    border-bottom: 1px solid var(--rosa-07);
+    margin-left: 3%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    
+}
+.adm-filt h2 {
+    color: var(--rosa-06);
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+/*
+* MOD_A a pagina de usuarios
+*/
+.adm-usuario-item{
+    background-color: var(--branco);
+    margin: 2%;
+  
+    border-radius: 10px;
+  
+    line-height: 35px;
+}
+
+
+/*
+*  MOD_A  a dispositivos com telas pequenas
+*/
+ 
+@media screen and (max-width: 700px) {
+    #adm-add-record-add {
+        margin-bottom: 5%;
+    }     
+}
